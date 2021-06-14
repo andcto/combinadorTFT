@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MostrarDetalheItemDialogController">
+   <children>
+      <Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="31.0" layoutY="26.0" text="Nome" />
+            <Label layoutX="31.0" layoutY="93.0" text="Tipo" />
+            <Label layoutX="31.0" layoutY="151.0" text="Descrição" />
+            <TextField fx:id="textFieldNome" editable="false" layoutX="31.0" layoutY="54.0" prefHeight="25.0" prefWidth="350.0" />
+            <TextField fx:id="textFieldTipo" editable="false" layoutX="31.0" layoutY="120.0" prefHeight="25.0" prefWidth="350.0" />
+            <TextArea fx:id="textFieldDescricao" layoutX="31.0" layoutY="175.0" prefHeight="200.0" prefWidth="350.0" />
+            <Button layoutX="470.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleVoltar" text="Voltar" />
+            <ImageView fx:id="imageViewItem" fitHeight="160.0" fitWidth="160.0" layoutX="414.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
